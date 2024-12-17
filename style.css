@@ -1,0 +1,28 @@
+html{
+    font-size: 15px;
+}
+p{
+    font-size: 0.9em; /*relative size, 0.5 would be half of the mother size */
+}
+
+p strong{
+    color: rgb(106, 94, 2);
+}
+img{
+    height: 12vh; /* vh means relative to height, vw would be relative to width */
+    border-radius: 99%;
+    margin: 10px;
+}
+button{
+    border-style: groove;
+    border-color: blueviolet;
+    height: 4em;
+    width: 6em;
+}
+a + img{
+    border-style: double;
+    border-color: crimson;
+}
+img:hover{
+    height: 16em;
+}
