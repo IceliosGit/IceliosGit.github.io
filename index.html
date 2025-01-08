@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Antonin</title>
-        <link rel="stylesheet" href="style.css"> 
+        <title>Beaver Colony</title> <!-- This is the title tag, which appears in the browser tab -->
+        <link href="https://fonts.cdnfonts.com/css/lumberjack" rel="stylesheet"> <!-- Search for the lumberjack font on css -->
+        <link rel="stylesheet" href="style.css"> <!-- link the html file to the css file -->
     </head>
     <body>
         <h1> 
-            Le meilleur site du monde !
+            Beaver colony
         </h1>
         <h2>
-            Nombre de banane
+            Choose your starting beaver:
         </h2>
-        <p id="banana_counter">
-            <span>12</span> bananes
-        </p>
-        <a href="https://pmotschmann.github.io/Evolve/">sympa ce idle game</a>  
-        <img src="beaver_ai.png" alt="AI Beaver">
-        <img src="american_Beaver.jpg" alt="american_Beaver">
-        <button id="button_beaver">add banana</button>
+        <div class="image-container">
+            <div class="image-wrapper">
+                <img src="image/american_beaver.jpg" alt="american beaver" class="beaver left">
+                <p class="text">
+                    American Beaver (Castor canadensis): Larger and more industrious, the American beaver excels at building massive dams and 
+                    altering the environment. Their ability to create expansive wetlands gives you more opportunities for growth, 
+                    but requires more resources and planning.
+                </p>
+            </div>
+            
+            <div class="image-wrapper">
+                <img src="image/eurasian_beaver.png" alt="eurasian beaver" class="beaver right">
+                <p class="text">
+                    European Beaver (Castor fiber): Smaller but more efficient, the European beaver focuses on precision and smaller-scale dams. 
+                    Their ability to adapt to various environments makes them versatile, with a more balanced resource management approach.
+                </p>
+            </div>
+        </div>
     </body>
     <script src="app.js"></script>
-</html> 
+</html>

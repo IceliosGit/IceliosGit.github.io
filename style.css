@@ -1,28 +1,41 @@
 html{
     font-size: 15px;
 }
-p{
-    font-size: 0.9em; /*relative size, 0.5 would be half of the mother size */
+h1{
+    font-family: "lumberjack", sans-serif;
 }
 
-p strong{
-    color: rgb(106, 94, 2);
+p{
+    font-size: 0.9em; /*relative size, 0.5 would be half of the mother size */
+    background-color: #9e5b40; /* Brown background color */
+    color: black; /* White text */
+    padding: 0.5em;
+    width: 90%; /* Optional: Set width to make the text box larger */
+    z-index: 3; /* Make sure text appears above the image */
+    display: none; /* Hide text by default */
 }
+
+.image-container {
+    display: flex; /* Make the images appear in a row */
+}
+
 img{
     height: 12vh; /* vh means relative to height, vw would be relative to width */
-    border-radius: 99%;
-    margin: 10px;
+    border-radius: 99%; /* Make the image round */
+    margin-top: 1.5em;
+    margin-left: 1%;
+    margin-bottom: 2em;
+    margin-right: 2em;
+    transition: all 0.3s ease; /* Smooth transition for resizing */
+    border-style: solid;
+    border-color: #9e5b40; /* Chestnut Brown */
 }
-button{
-    border-style: groove;
-    border-color: blueviolet;
-    height: 4em;
-    width: 6em;
-}
-a + img{
-    border-style: double;
-    border-color: crimson;
-}
+
 img:hover{
-    height: 16em;
+    height: 16em; /* Increase size on hover */
+    z-index: 2; /* Make sure image appears above other images */
+}
+
+img:hover + .text{
+    display: block; /* Make text appear on hover */
 }
